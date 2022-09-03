@@ -10,7 +10,7 @@
             <li class="dropdown">
               <a href="https:{{url('dashboard')}}" class="nav-link has-dropdown"><i class="fas fa-columns"></i> <span>Employee</span></a>
               <ul class="dropdown-menu" style="display: none;">
-                <li><a class="nav-link" href="{{url('registation')}}">Add Employee</a></li>
+                <li><a class="nav-link" href="{{route('create.employee')}}">Add Employee</a></li>
                 <li><a class="nav-link" href="{{url('view')}}">Employee List</a></li>
               </ul>
             </li>

@@ -13,11 +13,11 @@
               <div class="card-header"><h4>Register</h4></div>
 
               <div class="card-body">
-                <form method="POST">
+                <form action="{{route('store.employee')}}" method="POST">@csrf
                   <div class="row">
                     <div class="form-group col-6">
-                      <label for="frist_name">First Name</label>
-                      <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus>
+                      <label for="first_name">First Name</label>
+                      <input id="first_name" type="text" class="form-control" name="first_name" autofocus>
                     </div>
                     <div class="form-group col-6">
                       <label for="last_name">Last Name</label>
@@ -52,18 +52,8 @@
                   </div>
                   <div class="row">
                     <div class="form-group col-6">
-                      <label>Country</label>
-                      <select class="form-control selectric">
-                        <option>Indonesia</option>
-                        <option>Palestine</option>
-                        <option>Syria</option>
-                        <option>Malaysia</option>
-                        <option>Thailand</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-6">
                       <label>Province</label>
-                      <select class="form-control selectric">
+                      <select class="form-control selectric" name="province">
                         <option>West Java</option>
                         <option>East Java</option>
                       </select>
@@ -72,11 +62,11 @@
                   <div class="row">
                     <div class="form-group col-6">
                       <label>City</label>
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control" name="city">
                     </div>
                     <div class="form-group col-6">
                       <label>Postal Code</label>
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control" name="postal_code">
                     </div>
                   </div>
 
