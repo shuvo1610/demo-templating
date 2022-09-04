@@ -66,7 +66,7 @@
                     </div>
                     <div class="form-group col-6">
                       <label>Postal Code</label>
-                      <input type="text" class="form-control" name="postal_code">
+                      <input type="number" class="form-control" name="postal_code">
                     </div>
                   </div>
 

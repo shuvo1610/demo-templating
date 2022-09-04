@@ -16,4 +16,11 @@ class EmployeeController extends Controller
     	$employee = Employee::create($request->all());
     	return back();
     }
+
+    public function update(Request $request,$id)
+    {
+    	$employee = Employee::where('id',$id)->first();
+    	$employee->update($request->all());
+    	return back();
+    }
 }
